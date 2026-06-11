@@ -28,4 +28,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying...===to environment==="
+        run: echo "Deploying...===to environment===123"
