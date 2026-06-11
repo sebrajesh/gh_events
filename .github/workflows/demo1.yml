@@ -3,7 +3,16 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main
+      - develop
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev 
+      - "feat/**"
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,4 +28,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying..."
+        run: echo "Deploying...===to environment===123"
